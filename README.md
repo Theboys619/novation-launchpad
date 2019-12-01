@@ -17,6 +17,5 @@ const launchpad = new nl.Launchpad("Launchpad MK2", true); // Pass a second argu
 launchpad.getDevice();
 launchpad.on('DeviceReady', function() {
   console.log("Device is Ready!");
-  RunCommand();
 });
 ```
