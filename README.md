@@ -11,7 +11,7 @@ Documentation not yet available.
 
 ### Example Use
 ```javascript
-const nl = require('novation-launchpad');
+const nl = require('novation-launchpadmk2');
 const launchpad = new nl.Launchpad("Launchpad MK2", true); // Pass a second argument (true or false) to disable/enable sysex.
 
 launchpad.getDevice();
