@@ -5,7 +5,7 @@
 - [Listeners](#listeners)
 - [Functions](#functions)
 - [Examples](#examples)
-	- [Listener Exmaples](#listener-examples)
+	- [Listener Examples](#listener-examples)
 	- [Function Examples](#function-examples)
 
 ## Listeners
@@ -17,7 +17,7 @@
 	- Listens for a button pressed on Launchpad
 - **KeyUp**
 	- Arguments: `note, veloctiy`
-    - Listens after a button is pushed and let off on Launchpad
+    	- Listens after a button is pushed and let off on Launchpad
 - **MidiMessage**
 	- Arguments: `e or event`
 	- Listens for any message of Launchpad
