@@ -3,7 +3,7 @@ This is a module to use in Node.js. As of right now it is not available for Brow
 
 ## Installation
 
-Install by using: `npm install novation-launchpad`
+Install by using: `npm install novation-launchpadmk2`
 
 ## Documentation
 
