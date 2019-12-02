@@ -22,7 +22,7 @@
 	- Arguments: `e or event`
 	- Listens for any message of Launchpad
 - **DeviceReady**
-	- No arguments
+	- No Arguments
 	- Listens for when the Launchpad is ready to use
 - **StatusChange**
 	- Arguments: `device`
