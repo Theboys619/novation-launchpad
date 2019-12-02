@@ -5,6 +5,8 @@
 - [Listeners](#Listeners)
 - [Functions](#Functions)
 - [Examples](#Examples)
+	- [Listener Exmaples](#Listener-Examples)
+	- [Function Examples](#Function-Examples)
 
 ## Listeners
 - **Looped**
@@ -64,7 +66,7 @@
 ### Listener Examples
 ```javascript
 const nl = require('novation-launchpadmk2');
-const launchpad = new Launchpad("Launchpad MK2");
+const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 let counter = 0;
 
 // Arrow functions also work
@@ -92,10 +94,34 @@ launchpad.on('StatusChange', function(device) {
 ### Function Examples
 ```javascript
 const nl = require('novation-launchpadmk2');
-const launchpad = new Launchpad("Launchpad MK2");
+const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 
-//Paints leds red when pressed
+launchpad.on("DeviceReady", function() {
+	console.log("Device is Ready!");
+	console.log("Sysex: " + launchpad.sysexEnabled()); // Returns to console if sysex is enabled
+
+	launchpad.FlashLed(111, 5, 2); // Flashes red and white once device is ready at button 111
+	launchpad.PulseLed(89, 5); // Pulses red at the top farthest led (89)
+});
+
+// Paints leds red when pressed
 launchpad.on("KeyDown", function(note, vel) {
+	launchpad.LedOn(note, 5); // ...LedOn(note, 63, 0, 0) also works only if sysex is enabled
 
+	switch (note) { // switch statement for different note values (button pressed)
+		case 19:
+			launchpad.clearLeds(); // Clears all lit leds if Record/Arm pressed
+			// Loops through all leds that are on and uses ...LedOff(led)
+			break;
+		case 111:
+			launchpad.TextOn("Hello World!", 5, 1); // Scrolls and loops Hello World! with color red.
+			break;
+		case 110:
+			launchpad.TextOff() // Stops the looping text
+			break;
+		case 29:
+			launchpad.setRowLeds(2, 70); // Sets row 2 leds all to a blue/cyan color
+			break;
+	}
 });
 ```
