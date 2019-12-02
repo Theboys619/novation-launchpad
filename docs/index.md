@@ -29,6 +29,9 @@
 	- Listens for a change in the device
 
 ## Functions
+- **getDevice**
+	- No Arguments
+	- Gets device specified and emits "DeviceReady" once ready
 - **LedOff**
 	- Arguments: `led`
 	- Turns a specified led off
@@ -69,6 +72,8 @@ const nl = require('novation-launchpadmk2');
 const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 let counter = 0;
 
+launchpad.getDevice();
+
 // Arrow functions also work
 launchpad.on('DeviceReady', function() {
 	console.log("Device Ready!");
@@ -96,6 +101,7 @@ launchpad.on('StatusChange', function(device) {
 const nl = require('novation-launchpadmk2');
 const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 
+launchpad.getDevice(); // Gets the Device Specified and emits "DeviceReady" once ready
 launchpad.on("DeviceReady", function() {
 	console.log("Device is Ready!");
 	console.log("Sysex: " + launchpad.sysexEnabled()); // Returns to console if sysex is enabled
