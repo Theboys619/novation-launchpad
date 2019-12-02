@@ -3,11 +3,11 @@ This is a module to use in Node.js. As of right now it is not available for Brow
 
 ## Installation
 
-Install by using: ```npm install novation-launchpad```
+Install by using: `npm install novation-launchpad`
 
 ## Documentation
 
-Documentation not yet available.
+Documentation is available at https://theboys619.github.io/novation-launchpadmk2/
 
 ### Example Use
 ```javascript
