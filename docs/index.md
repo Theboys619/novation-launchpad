@@ -2,11 +2,11 @@
 
 ## Table Of Contents
 
-- [Listeners](#Listeners)
-- [Functions](#Functions)
-- [Examples](#Examples)
-	- [Listener Exmaples](#Listener-Examples)
-	- [Function Examples](#Function-Examples)
+- [Listeners](#listeners)
+- [Functions](#functions)
+- [Examples](#examples)
+	- [Listener Exmaples](#listener-examples)
+	- [Function Examples](#function-examples)
 
 ## Listeners
 - **Looped**
@@ -69,7 +69,7 @@
 ### Listener Examples
 ```javascript
 const nl = require('novation-launchpadmk2');
-const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
+const launchpad = new nl.Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 let counter = 0;
 
 launchpad.getDevice();
@@ -99,7 +99,7 @@ launchpad.on('StatusChange', function(device) {
 ### Function Examples
 ```javascript
 const nl = require('novation-launchpadmk2');
-const launchpad = new Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
+const launchpad = new nl.Launchpad("Launchpad MK2"); // Pass a second argument (true or false) to enable sysex
 
 launchpad.getDevice(); // Gets the Device Specified and emits "DeviceReady" once ready
 launchpad.on("DeviceReady", function() {
