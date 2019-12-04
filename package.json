@@ -1,6 +1,6 @@
 {
   "name": "novation-launchpadmk2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Module for the Novation Launchpad Mk2",
   "main": "index.js",
   "scripts": {
