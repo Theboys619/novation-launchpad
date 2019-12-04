@@ -14,8 +14,11 @@ Documentation is available at https://theboys619.github.io/novation-launchpadmk2
 const nl = require('novation-launchpadmk2');
 const launchpad = new nl.Launchpad("Launchpad MK2", true); // Pass a second argument (true or false) to disable/enable sysex.
 
-launchpad.getDevice();
+launchpad.getDevice(); // Emits DeviceReady once device output and input is grabbed
 launchpad.on('DeviceReady', function() {
   console.log("Device is Ready!");
 });
 ```
+
+## ChangeLog
+- Fixed issue with RGB setting velocity values
