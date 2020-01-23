@@ -55,10 +55,10 @@
 	- Pulses the led with a color (Turns brightness up and down)
 - **setColumn**
 	- Arguments: `column, color`
-	- Sets a column of leds to a color.
+	- Sets a column of leds to a color (1-8).
 - **setRow**
 	- Arguments: `row, color`
-	- Sets an entire row of leds to light up.
+	- Sets an entire row of leds to light up (1-8).
 - **setRowLeds**
 	- Arguments: `row, color`
 	- Sets an entire row of leds to light up
@@ -78,7 +78,7 @@
 	- Makes a rectangle from a led (x, y) to another (x2, y2).
 - **sysexEnabled**
 	- No Arguments
-	- Returns true or false if sysex is enbaled or not
+	- Returns true or false if sysex is enabled or not
 ## Examples
 
 ### Listener Examples
