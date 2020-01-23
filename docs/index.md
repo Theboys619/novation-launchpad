@@ -55,10 +55,10 @@
 	- Pulses the led with a color (Turns brightness up and down)
 - **setColumn**
 	- Arguments: `column, color`
-	- Sets a column of leds to a color (1-8).
+	- Sets a column of leds to a color (1-8)
 - **setRow**
 	- Arguments: `row, color`
-	- Sets an entire row of leds to light up (1-8).
+	- Sets an entire row of leds to light up (1-8)
 - **setRowLeds**
 	- Arguments: `row, color`
 	- Sets an entire row of leds to light up
@@ -72,10 +72,10 @@
 	- Stops text from scrolling on screen if it is looping
 - **rect**
 	- Arguments: `color, x, y, width, height`
-	- Makes a rectangle of leds to light up at (x, y).
+	- Makes a rectangle of leds to light up at (x, y)
 - **rectTo - Old**
 	- Arguments: `color, x, y, x2, y2`
-	- Makes a rectangle from a led (x, y) to another (x2, y2).
+	- Makes a rectangle from a led (x, y) to another (x2, y2)
 - **sysexEnabled**
 	- No Arguments
 	- Returns true or false if sysex is enabled or not

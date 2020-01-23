@@ -197,7 +197,7 @@ class Launchpad extends EventEmitter {
     if (this.sysex) {
       this.output.send([240, 0, 32, 41, 2, 24, 20, 247]);
     } else {
-      console.log("Sysex Not Enabled!");
+      throw new Error("Sysex Not Enabled!");
     }
   }
 
