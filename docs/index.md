@@ -44,12 +44,21 @@
 - **clearLeds**
 	- No Arguments
 	- Clears all led that were turned on
+- **resetLeds**
+	- No Arguments
+	- Same as clearLeds but faster.
 - **FlashLed**
 	- Arguments: `led, flashingcolor, startingcolor`
 	- Sets and Led to the starting color and flashes between the flashing color and the starting color
 - **PulseLed**
 	- Arguments: `led, color`
 	- Pulses the led with a color (Turns brightness up and down)
+- **setColumn**
+	- Arguments: `column, color`
+	- Sets a column of leds to a color.
+- **setRow**
+	- Arguments: `row, color`
+	- Sets an entire row of leds to light up.
 - **setRowLeds**
 	- Arguments: `row, color`
 	- Sets an entire row of leds to light up
@@ -61,6 +70,12 @@
 - **TextOff**
 	- No Arguments
 	- Stops text from scrolling on screen if it is looping
+- **rect**
+	- Arguments: `color, x, y, width, height`
+	- Makes a rectangle of leds to light up at (x, y).
+- **rectTo - Old**
+	- Arguments: `color, x, y, x2, y2`
+	- Makes a rectangle from a led (x, y) to another (x2, y2).
 - **sysexEnabled**
 	- No Arguments
 	- Returns true or false if sysex is enbaled or not
