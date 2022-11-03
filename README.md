@@ -21,4 +21,5 @@ launchpad.on('DeviceReady', function() {
 ```
 
 ## ChangeLog
+- Fixed issue where G had to be > than 0 to set rgb values
 - Fixed issue with RGB setting velocity values
