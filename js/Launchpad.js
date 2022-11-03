@@ -84,7 +84,7 @@ class Launchpad extends EventEmitter {
 
   LedOn(led, color, g, b) {
     this.leds.push(led);
-    if (g) {
+    if (g !== undefined) {
       if (!this.sysex) {
         throw new Error(`Sysex is Not Enabled. Cannot use RGB values!`);
       }
